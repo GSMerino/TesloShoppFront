@@ -30,7 +30,7 @@ export const useAuthStore = create<AuthState>()((set, get) => ({
 
     isAdmin: () => {
         const roles = get().user?.roles || [];
-        return roles.includes("admin");
+        return roles.includes('admin');
     },
 
     login: async(email: string, password: string) => {

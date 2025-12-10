@@ -67,3 +67,8 @@ const uploadFiles = async (files: File[]) => {
     const uploadedFileNames = await Promise.all(uploadPromises);
     return uploadedFileNames;
 };
+
+
+
+
+
